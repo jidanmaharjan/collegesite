@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="assets/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Best college in Nepal</h1>
+            <p>Our college is the best all over Nepal<br> If you dont believe, Try it!</p>
+            <a href="about.html" class="hero-btn" >Visit Us To Know More</a>
+        </div>
+    </section>
+    <!--course-->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We have wide varieties of courses. you will be amazed to see them.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+        </div>
+
+    </section>
+    
+    <!--Campus-->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We have the best facilities anyone could ever ask for</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="assets/library.png">
+                <h3>Best library</h3>
+                <p>we have the best library all over Nepal</p>
+            </div>
+            <div class="facilities-col">
+                <img src="assets/cafeteria.png">
+                <h3>Tasty and Healty Food</h3>
+                <p>we have the best Cafeteria all over Nepal</p>
+            </div>
+            <div class="facilities-col">
+                <img src="assets/basketball.png">
+                <h3>Largest court</h3>
+                <p>we have the best Basketball court all over Nepal</p>
+            </div>
+
+        </div>
+
+    </section>
+
+<!--testimonials-->
+<section class="testimonials">
+    <h1>What Our Students Says</h1>
+    <p>We have the best facilities anyone could ever ask for</p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="assets/user1.jpg">
+            <div><p>My dream to study at best college in Nepal is being fulfilled by this college. I feel like im flying</p>
+            <h3>Jane Foster</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="assets/user2.jpg">
+            <div><p>I really love the facilities our college provides to us, Its the best. what else would we need</p>
+            <h3>John Doe</h3>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        </div>
+    </div>
+
+</section>
+
+<!--call us -->
+<section class="cta">
+    <h1>Enroll now for various courses<br> Anywhere from Nepal</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!--footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>this is the about us section. <br>here we add the content of about us page</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+    </div>
+</section>
+
+
+
+
+
+
+   <!----javascript toggle---->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
